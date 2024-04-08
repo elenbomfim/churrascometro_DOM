@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Churrascômetro</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="cabecalho">
+      <h1>CHURRASCÔMETRO</h1>
+    </div>
+    <section class="menu">
+      <ul class="menu_lista">
+        <li class="menu_item">
+          <a href="#">SOBRE</a>
+        </li>
+        <li class="menu_item">
+          <a href="#">RECEITAS</a>
+        </li>
+        <li class="menu_item">
+          <a href="#">CHURRASCÔMETRO</a>
+        </li>
+        <li class="menu_item">
+          <a href="#">NOSSAS LOJAS</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container">
+      <div id="passo1">
+        <h2>INFORMAÇÕES DO USUÁRIO</h2>
+        <form id="usuario">
+          <label for="nome">Nome:</label><br />
+          <input type="text" id="nome" required /><br />
+          <label for="email">E-mail:</label><br />
+          <input type="email" id="email" required /><br />
+          <label for="cep">CEP:</label><br />
+          <input type="text" id="cep" required /><br />
+          <input type="checkbox" id="promoCheckbox" checked />
+          <label for="promoCheckbox">Aceito receber e-mails com promoções</label
+          ><br />
+          <span id="errorMessage" class="error"></span><br />
+          <button type="submit">Próximo</button>
+        </form>
+      </div>
+
+      <div id="passo2" style="display: none">
+        <h2>QUANTIDADE DE CONVIDADOS:</h2>
+        <form id="peopleForm">
+          <label for="homens">Homens:</label><br />
+          <input type="number" id="homens" min="0" value="0" required /><br />
+          <label for="mulheres">Mulheres:</label><br />
+          <input type="number" id="mulheres" min="0" value="0" required /><br />
+          <label for="criancas">Crianças:</label><br />
+          <input type="number" id="criancas" min="0" value="0" required /><br />
+          <label for="bebidasAlccol">Bebida alcólica?</label><br />
+          <input
+            type="number"
+            id="bebidasAlccol"
+            min="0"
+            value="0"
+            required
+          /><br />
+          <span id="peopleErrorMessage" class="error"></span><br />
+          <button type="button" onclick="calculadora()">Calcular</button>
+        </form>
+      </div>
+
+      <div id="passo3" style="display: none">
+        <h2>RESULTADO:</h2>
+        <div id="resultado">
+          <p class="resultado_itens"></p>
+        </div>
+        <button onclick="reset()">Voltar para o início</button>
+      </div>
+    </section>
+    <section class="rodape">
+      <ul class="menu_lista_rodape">
+        <li class="menu_item">
+          <a href="#">política de privacidade</a>
+        </li>
+        <li class="menu_item">
+          <a href="#">Termos de uso</a>
+        </li>
+        <li class="menu_item">
+          <a href="#">Copyright © 2024</a>
+        </li>
+      </ul>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

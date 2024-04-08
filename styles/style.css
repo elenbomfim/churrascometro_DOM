@@ -1,0 +1,170 @@
+body{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(179, 155, 121);
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.cabecalho{   
+    background-image: url(/assets/churrascometro_12.jpg);   
+    padding: 1em;  
+    margin-top: 4em;    
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.menu{
+    background-color: #292828;
+    padding: 0.1em;
+    margin-bottom: 2em;
+}
+
+h1{
+    display: flex;
+    justify-content: center; 
+    font-size: 70px;
+    color: #fff;
+    padding-top: 0.2em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+  
+.menu_lista{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    list-style-type: none; 
+    text-align: center; 
+    gap: 20em;    
+}
+  
+.menu_item a{  
+    text-decoration: none; 
+    color: rgb(179, 64, 19);   
+}
+  
+.menu_item a:hover{  
+    color: #fff;
+}
+
+.menu_item a:active{
+    color: #b3a0a0
+}
+
+#passo1, #passo2, #passo3{  
+    border-radius: 1em;
+    padding: 1em 5em;    
+    background-repeat: no-repeat;   
+}
+
+label{
+    color: #fff;
+    font-size: 16px;
+}
+
+#resultado{
+    color: #fff;
+}
+
+#nome, #email, #cep, #homens, #mulheres, #criancas{
+    margin-bottom: 1em;
+}
+
+h2{
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+.error {
+   color: red;
+}
+
+button {
+    border-radius: 0.4em;
+    padding: 0.5em 1em;   
+}
+
+button:hover {
+    background-color: rgba(190, 105, 34, 0.959); 
+}
+
+.menu_lista_rodape{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    list-style-type: none; 
+    text-align: center; 
+    gap: 20em;  
+}
+.rodape{
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+}
+
+
+@media screen and (max-width: 768px){
+    body {
+        overflow-x: hidden; /* Impede a rolagem horizontal */
+    }
+
+    .cabecalho{   
+        background-image: url(/assets/churrascometro_12.jpg);       
+        margin-top: 2em;    
+        height: 100%;
+        right: 9.4%;
+    }
+
+    h1{
+        font-size: 30px;
+        padding-top: 0.3em;
+    }
+
+    .menu{
+        background-color: #292828;
+        padding: 0.1em 0;
+        margin-bottom: 0.2em;
+    }
+
+    .menu_lista{
+        display: flex;
+        flex-direction: row;        
+        list-style-type: none; 
+        text-align: center; 
+        gap: 1em;  
+        font-size: 12px;  
+        padding-right: 2.3em;
+    }
+
+    button {
+        border-radius: 0.4em;            
+    }
+
+    .rodape{
+        width: 100%;     
+        height: 50px     
+    }
+
+    .menu_lista_rodape{
+       padding-right: 8em;
+       gap: 1.5em;  
+       font-size: 10px;
+    }
+
+    #passo1, #passo2, #passo3{  
+       margin-top: 6em;
+    }
+}
