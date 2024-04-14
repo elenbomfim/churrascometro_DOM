@@ -80,7 +80,7 @@ function calculadora() {
   
   <p> Churrasco para ${totalPessoas} pessoas: </p>
   <p> Carne: ${carne} KG</p>
-  <p> Linguiça: ${linguica} garrafas de 1L</p>
+  <p> Linguiça: ${linguica} KG</p>
   <p> Pão de alho: ${paoDeAlho} unidades</p>
   <p> Carvão: ${carvao} KG</p>
   <p> Sal Grosso: ${sal} KG</p>
